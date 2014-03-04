@@ -1,7 +1,7 @@
 package posproject;
 
 /**
- * @author bholewinski
+ * @author Ben Holewinski
  */
 public class Receipt {
     private FakeDatabase db = new FakeDatabase();
