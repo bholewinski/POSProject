@@ -20,11 +20,11 @@ public class LineItem {
         return db.findProduct(prodId);
     }
     
-    public double getOrigPriceSubtotal() {
+    public double getSubtotal() {
         return product.getUnitPrice() * qty;
     }
     
-    public double getDiscountAmt() {
+    public double getDiscountAmount() {
         return product.getDiscountStrategy().getDiscountAmount(product.getUnitPrice(), qty);
     }
 

@@ -23,7 +23,7 @@ public class Receipt {
     public double getTotalBeforeDiscount() {
         double total = 0.0;
         for(LineItem item : lineItems) {
-            total += item.getOrigPriceSubtotal();
+            total += item.getSubtotal();
         }
         return total;
     }
@@ -31,7 +31,7 @@ public class Receipt {
     public double getTotalDiscount() {
         double total = 0.0;
         for(LineItem item : lineItems) {
-            total += item.getDiscountAmt();
+            total += item.getDiscountAmount();
         }
         return total;
     }
