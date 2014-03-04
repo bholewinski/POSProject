@@ -1,8 +1,7 @@
 package posproject;
 
 /**
- *
- * @author bholewinski
+ * @author Ben Holewinski
  */
 public class FakeDatabase {
     private Customer[] customers = {

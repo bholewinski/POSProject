@@ -1,10 +1,7 @@
 package posproject;
 
-import java.text.NumberFormat;
-
 /**
- *
- * @author bholewinski
+ * @author Ben Holewinski
  */
 public class OutputReceiptToConsole implements OutputReceiptStrategy {
 

@@ -1,8 +1,7 @@
 package posproject;
 
 /**
- *
- * @author bholewinski
+ * @author Ben Holewinski
  */
 public class Customer {
     private String custId;
@@ -18,7 +17,6 @@ public class Customer {
     }
 
     public void setCustId(String custId) {
-        // validation is needed
         this.custId = custId;
     }
 
