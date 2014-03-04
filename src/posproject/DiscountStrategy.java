@@ -12,14 +12,8 @@ package posproject;
  */
 public interface DiscountStrategy {
 
-    double getDiscount(double productCost, double quantity);
-
-    double getProductCost();
-
-    double getQuantity();
-
-    void setProductCost(double productCost);
-
-    void setQuantity(double quantity);
+    public abstract double getDiscountAmount(double unitPrice, int qty);
+    public abstract double getDiscountRate();
+    public abstract void setDiscountRate(double discountRate);
     
 }

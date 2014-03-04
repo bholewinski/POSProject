@@ -4,24 +4,27 @@ package posproject;
  * @author Ben Holewinski
  */
 public class Product {
-    private String productID;
+    private String prodId;
     private String description;
-    private double price;
-    private DiscountStrategy discount;
+    private double unitPrice;
+    private DiscountStrategy discountStrategy;
 
-    public Product(String productID, String description, double price, DiscountStrategy discount) {
-        this.productID = productID;
+    public Product() {
+    }
+
+    public Product(String prodId, String description, double unitPrice, DiscountStrategy discountStrategy) {
+        this.prodId = prodId;
         this.description = description;
-        this.price = price;
-        this.discount = discount;
+        this.unitPrice = unitPrice;
+        this.discountStrategy = discountStrategy;
     }
 
-    public String getProductID() {
-        return productID;
+    public String getProdId() {
+        return prodId;
     }
 
-    public void setProductID(String productID) {
-        this.productID = productID;
+    public void setProdId(String prodId) {
+        this.prodId = prodId;
     }
 
     public String getDescription() {
@@ -32,20 +35,20 @@ public class Product {
         this.description = description;
     }
 
-    public double getPrice() {
-        return price;
+    public double getUnitPrice() {
+        return unitPrice;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setUnitPrice(double unitPrice) {
+        this.unitPrice = unitPrice;
     }
 
-    public DiscountStrategy getDiscount() {
-        return discount;
+    public DiscountStrategy getDiscountStrategy() {
+        return discountStrategy;
     }
 
-    public void setDiscount(DiscountStrategy discount) {
-        this.discount = discount;
+    public void setDiscountStrategy(DiscountStrategy discountStrategy) {
+        this.discountStrategy = discountStrategy;
     }
     
     
